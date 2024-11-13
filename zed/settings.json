@@ -7,18 +7,58 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+
+  // vim (used, default false though)
+  "vim_mode": false,
+
   // appearance
+  "ui_font_family": "JetBrains Mono",
   "ui_font_size": 15,
-  "buffer_font_size": 15,
+  "buffer_font_size": 14,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte (red)",
     "dark": "Catppuccin Mocha (red)"
   },
 
-  // telemetry
+  // terminal
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "shell": "system",
+    "working_directory": "current_project_directory"
+  },
+
+  //telemetry
   "telemetry": {
     "diagnostics": false,
     "metrics": false
-  }
+  },
+
+  // tab size
+  "tab_size": 2,
+
+  // extensions
+  "auto_install_extensions": {
+    "catppuccin": true, // theme
+    "discord-presence": true,
+    "env": true,
+    "gdscript": true,
+    "html": true,
+    "ini": true,
+    "java": true,
+    "kotlin": true,
+    "live-server": true,
+    "lua": true,
+    "php": true
+  },
+
+  // keymap
+  "base_keymap": "Atom"
 }
