@@ -6,7 +6,10 @@
 // To see all of Zed's default settings without changing your
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
+//
+// 2024-11-14 TODO arrange stuff alphabetically
 {
+  // ai
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -14,6 +17,12 @@
     },
     "version": "2"
   },
+
+  // updates
+  "auto_update": true,
+
+  // saving
+  "autosave": "off",
 
   // vim (used, default false though)
   "vim_mode": false,
@@ -44,6 +53,14 @@
   // tab size
   "tab_size": 2,
 
+  // editor tabs
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history"
+  },
+
   // extensions
   "auto_install_extensions": {
     "catppuccin": true, // theme
@@ -60,5 +77,10 @@
   },
 
   // keymap
-  "base_keymap": "Atom"
+  "base_keymap": "Atom",
+
+  // journal
+  "journal": {
+    "hour_format": "hour24"
+  }
 }
