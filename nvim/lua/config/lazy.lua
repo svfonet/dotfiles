@@ -32,9 +32,25 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+
+  -- nvim-treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      local configs = require("nvim-treesitter.configs")
+      configs.setup({
+        ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc", "python", "java", "javascript", "html", "css" },
+        sync_install = false,
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
+    end
+  }
 })
 
 -- Catppuccin
+-- TODO move to separate config
 require("catppuccin").setup({
   flavour = "auto", -- latte, frappe, macchiato, mocha
   background = {    -- :h background
