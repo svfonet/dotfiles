@@ -1,0 +1,120 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+//
+// 2024-11-14 TODO arrange stuff alphabetically
+{
+  // ai
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+
+  // file types
+  "file_types": {
+    "C++": ["ino"]
+  },
+
+  // updates
+  "auto_update": true,
+
+  // saving
+  "autosave": "off",
+
+  // vim (used, default false though)
+  "vim_mode": false,
+
+  // appearance
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte (red)",
+    "dark": "Catppuccin Mocha (red)"
+  },
+
+  // terminal
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "shell": "system",
+    "working_directory": "current_project_directory"
+  },
+
+  //telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // tab size
+  "tab_size": 2,
+
+  // editor tabs
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history"
+  },
+
+  // keymap
+  "base_keymap": "Atom",
+
+  // journal
+  "journal": {
+    "hour_format": "hour24"
+  },
+
+  // extensions
+  "auto_install_extensions": {
+    "catppuccin": true, // theme
+    "discord-presence": true,
+    "env": true,
+    "gdscript": true,
+    "html": true,
+    "ini": true,
+    "java": true,
+    "kotlin": true,
+    "live-server": true,
+    "lua": true,
+    "php": true
+  },
+
+  // discord presence
+  "lsp": {
+    "discord_presence": {
+      "initialization_options": {
+        // application id for the rich presence (required, keep it if you don't know what you're doing)
+        "application_id": "1263505205522337886",
+        // Base url for all language icons
+        "base_icons_url": "https://raw.githubusercontent.com/xhyrom/zed-discord-presence/main/assets/icons/",
+
+        "state": "Working on a {language:u} file.",
+        "details": null,
+        // URL for large image
+        "large_image": "{base_icons_url}/{language}.png",
+        "large_text": "{language:u}", // :u makes first letter upper-case
+        // URL for small image
+        "small_image": "{base_icons_url}/zed.png",
+        "small_text": "Zed",
+
+        // Rules - disable presence in some workspaces
+        "rules": {
+          "mode": "blacklist", // or whitelist
+          "paths": ["absolute path"]
+        },
+
+        "git_integration": true
+      }
+    }
+  }
+}
