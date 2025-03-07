@@ -77,6 +77,7 @@
   // extensions
   "auto_install_extensions": {
     "catppuccin": true, // theme
+    "catppuccin-icons": true, // theme
     "discord-presence": true,
     "env": true,
     "gdscript": true,
@@ -84,9 +85,12 @@
     "ini": true,
     "java": true,
     "kotlin": true,
+    "latex": true,
     "live-server": true,
+    "log": true,
     "lua": true,
-    "php": true
+    "php": true,
+    "ruff": true
   },
 
   // discord presence
