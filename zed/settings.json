@@ -10,6 +10,7 @@
 // 2024-11-14 TODO arrange stuff alphabetically
 {
   // ai
+  "icon_theme": "Catppuccin Mocha",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
