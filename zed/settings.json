@@ -1,0 +1,64 @@
+// Svfonet's Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+
+{
+  // appearance
+  "theme": {
+    "mode": "system",
+    "dark": "Gruvbox Dark Hard",
+    "light": "Gruvbox Light Hard"
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 14,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 14,
+  "minimap": {
+    "show": "always",
+    "thumb": "hover",
+    "current_line_highlight": "line"
+  },
+
+  // editor
+  "base_keymap": "Atom",
+  "tab_size": 2,
+
+  // predictions
+  "edit_predictions_disabled_in": ["comment", "string"],
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "format_on_save": "on",
+  "formatter": "auto",
+  "show_edit_predictions": false,
+
+  // extensions
+  "auto_install_extensions": {
+    "gdscript": true,
+    "html": true,
+    "ini": true,
+    "java": true,
+    "kotlin": true,
+    "latex": true,
+    "log": true,
+    "lua": true,
+    "php": true,
+    "sql": true,
+    "xml": true
+  },
+
+  // session
+  "restore_on_startup": "last_session",
+  "confirm_quit": true,
+
+  // telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}
